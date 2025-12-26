@@ -2,7 +2,10 @@ const AccountId = (24422)
 var AccountEmail = ("arvin@google.com")
 let AccountPassword = ("1234")
 AccountCity = ("chennai")
-let AccountState;
+
+AccountId = (3)
+
+console.log("AccountId");
 
 // AccountId = (3)
 // console.log(AccountId);

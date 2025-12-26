@@ -55,3 +55,41 @@ console.log(typeof userEmail);
 //  If val is a Boolean, return "boolean".
 //  If val is a Number, return "number".
 // - If val is a BigInt, return "bigint".
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++
+
+// points to remember
+// two types of memory:
+//stack , heap
+//all the premitive data comes under stack  memory
+//all the reference data comes under heap  memory
+                      //some examples
+
+
+ let shopName = "arvin marketing"  
+ 
+ let anotherName = shopName
+ anotherName = "imperial store"
+ console.log(shopName,anotherName);
+ 
+ let player1 = {
+    email :  "arvinpurohit@google.com", 
+    upiId : "user@ybl"
+ }
+
+ let player2 = player1
+ 
+player2.email = "purohit@google.com"
+
+console.log(player1.email,player2.email)
+
+
+//NOTES TO UNDERSTAND CONCEPT A LITTLE BETTER
+
+//STACK MEMORY GIVES A COPY OF THE BASE WHICH CAN BE CHANGED
+
+//HEAP MEMORY HAS A SINGLE BASE AND EVERY DATA IS TOOK FROM THE BASE GIVING US THE SAME OUT PUT
+
+
+        //***************************************************************// 

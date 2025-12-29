@@ -34,7 +34,9 @@ let str3 = str1 + str2
 // console.log(3+3 +"1");
 
 let gamecounter = "100"
- ++gamecounter
+console.log(gamecounter++);
+
+ 
 //  console.log(gamecounter++
 
 //  );

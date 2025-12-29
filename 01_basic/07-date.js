@@ -16,8 +16,9 @@ const myTimeStamp =  Date.now()
 // console.log(Math.floor((Date.now())/1000))
 
 let newdate = new Date()
-console.log(newdate.getMonth() + 1);
+// console.log(newdate.getMonth() + 1);
 
-newdate.toLocaleString("default" ,
+// newdate.toLocaleString("default")
+console.log(newdate.getUTCMonth()+1);
+
     
-)

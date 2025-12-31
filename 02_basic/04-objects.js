@@ -37,16 +37,30 @@ const obj4 = {...obj1 ,...obj2 ,...obj3}
 
 
 
-const player  = {
-name: "arvin",
-education : 12,
-study:"programming"
 
+
+
+const details = {
+    name : "ichigo",
+    fullName: "ichigo kurosaki" ,
+    anime : "bleach",
+    soulSociety : "orihime"
 }
+// console.log(details.soulSociety); THIS IS OK BUT IF YOU HAVE TO USE THE SAME ELEMENT FOR VARIOUS TIMES THEN THE METHOD BELOW IS PREFERRABLE
+
+const {soulSociety : soul} = details; //USE OF THIS IS TO SHORTEN THE ELEMENT OR DECONSTRUCT
+console.log(soul);
 
 
-// console.log(player.study);
 
-// const {education} = player// this is usefull where you have to use the same element various times
-// console.log(education);
+//LETS JUMP INTO APIS
 
+// HOW TO WRITE AN API 
+// {} IN THIS CURLY BRACES YOU WRITE THE APIS
+
+{
+    "name": "arvin",
+    "education": 14,
+    "surname": "purohit"
+}
+//in API you have to write the keys in an string format

@@ -18,21 +18,15 @@ for (const greet of greetings) {
 
 // maps
 
+
 const map = new Map()
-map.set('IN', "India")
-map.set('UK', "United Kingdom")
-map.set('FR', "France")
-
-
-console.log(map);
-
-
-
-// const map = new Map()
-// map.set('IN', "India")
-// map.set('USA', "United States of America")
-// map.set('Fr', "France")
-// map.set('IN', "India")
-
-
+map.set("IN", "India")
+map.set("SAB", "Saudi Arab of Emirates")
+map.set ("FR", "France")
 // console.log(map);
+
+
+for (const [ key , value] of map) {
+    console.log(key , ":>" , value );
+    
+}

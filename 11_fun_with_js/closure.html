@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>closure</title>
+</head>
+<body style="background-color: #313131;" >
+    <button id="orange">orange</button>
+    <button id="green">green</button>
+</body>
+<script>
+    // function outer(){
+    //     let username = 'Arvin';
+    //     function inner (){
+    //         console.log(username);
+        
+    //     }inner()
+    // }outer()
+
+
+
+    function outer (){
+        let username = 'leader';
+        let email = 'anff321'
+        function innername(){
+            console.log(username);
+            console.log(email);
+            
+            
+        }
+        return innername
+    }
+    const myfunc = outer()
+    myfunc()
+</script>
+<script>
+    // document.getElementById('orange').onclick =  function (){
+    //     document.body.style.backgroundColor = 'orange'
+    // } 
+    // document.getElementById('green').onclick =  function (){
+    //     document.body.style.backgroundColor = 'green'
+    // } 
+
+   function selectClr (color){
+    return function(){
+            document.body.style.backgroundColor = `${color}`
+    }
+   }
+
+   document.getElementById('orange').onclick = selectClr('orange')
+   document.getElementById('green').onclick = selectClr('green')
+</script>
+</html>
